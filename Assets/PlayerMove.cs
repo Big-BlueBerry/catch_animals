@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour {
     public static PlayerMove MoveInstance;
@@ -40,6 +41,16 @@ public class PlayerMove : MonoBehaviour {
     void SpawnEnemy(GameObject enemy)
     {
         var num = Random.Range(0, 4);
-        GameObject newenemy = Instantiate<GameObject>(enemy, new Vector2(Random.Range(-12, 12), 5.15f), Quaternion.identity);
+        GameObject newenemy = Instantiate<GameObject>(enemy, new Vector2(15f, Random.Range(-4, 4)), Quaternion.identity);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            Debug.Log("GameOver");
+            Destroy(this.gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

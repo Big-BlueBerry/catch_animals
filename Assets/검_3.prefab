@@ -20,9 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4144630125764802}
   - component: {fileID: 212531105045540640}
-  - component: {fileID: 114338058119364136}
-  - component: {fileID: 61024930767632066}
   - component: {fileID: 114742637971738648}
+  - component: {fileID: 61024930767632066}
   - component: {fileID: 50864298878124786}
   m_Layer: 0
   m_Name: "\uAC80_3"
@@ -89,17 +88,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9999998, y: 3}
   m_EdgeRadius: 0
---- !u!114 &114338058119364136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067325499021708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e063a6d684e70a34590f68a3d76d41c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114742637971738648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -111,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c44652bbb77214fa5b26e22d08915d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsDead: 0
 --- !u!212 &212531105045540640
 SpriteRenderer:
   m_ObjectHideFlags: 1

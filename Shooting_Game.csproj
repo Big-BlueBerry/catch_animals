@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D6C0E204-3ABD-8315-E0C5-627C4A0346AD}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp.dll</AssemblyName>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
@@ -15,6 +15,7 @@
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile>
     </CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.1f1</UnityVersion>
@@ -82,7 +83,7 @@
   <ItemGroup>
     <Compile Include="Assets\averal.cs" />
     <Compile Include="Assets\EnemyMove.cs" />
-    <Compile Include="Assets\GameOver.cs" />
+    <Compile Include="Assets\movebullet.cs" />
     <Compile Include="Assets\PlayerMove.cs" />
     <Compile Include="Assets\SwpanEnemies.cs" />
   </ItemGroup>
