@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class PlayerMove : MonoBehaviour {
     public static PlayerMove MoveInstance;
     public GameObject[] Enemies;
+    private int Wtime = 2;
+    private float time;
+
     // Use this for initialization
     void Start()
     {
@@ -36,6 +39,16 @@ public class PlayerMove : MonoBehaviour {
         {
             transform.position = new Vector2(transform.position.x, transform.position.y - 0.5f);
         }
+
+        time += Time.deltaTime;
+
+        if (time >= Wtime)
+        {
+            foreach (GameObject enemy in Enemies)
+                SpawnEnemy(enemy);
+            time = 0;
+        }
+
     }
 
     void SpawnEnemy(GameObject enemy)
